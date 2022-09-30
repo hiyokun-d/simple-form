@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(297deg, rgba(0,0,0,1) 0%, rgba(9,9,121,0.7035407913165266) 46%, rgba(0,212,255,1) 100%), url("./img/wallpaper.png");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    color: rgb(255, 240, 240);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+h1,p{
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: rgba(139, 208, 239, 0.572);
+    border-radius: 5px;
+     
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"],input[type="number"], textarea, select {
+    display: block;
+    margin-top: 10px;
+    height: 60px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-family: inherit;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%; 
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 5px;
+    color:rgba(255, 240, 240, 0.661);
+    transition: all 300ms;
+}
+
+button:hover {
+    border: 1px solid rgb(247, 247, 247);
+    background-color: rgb(159, 156, 156);
+    box-shadow: 5px 5px 10px rgb(91, 248, 232);
+    color: white;
+}

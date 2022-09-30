@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smansa Got Talent</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1 id="title">Smansa Got Talent</h1>
+		<p id="description">
+			Daftarkan dirimu dan tunjukkan <strong>Bakatmu</strong>
+		</p>
+
+		<form id="survey-form">
+			<label for="name" id="name-label">
+				Name: <input type="text" id="name" placeholder="Bambang" required/>
+			</label>
+
+			<label for="email" id="email-label">
+				email: <input type="email" id="email" placeholder="Bambang" required/>
+			</label>
+
+			<label for="number" id="number-label">
+				age:
+				<input
+					type="number"
+					id="number"
+					placeholder="Bambang"
+					min="16"
+					max="18"required
+				/>
+			</label>
+
+			<label for="dropdown" id="dropdown-label">
+				Kelas:
+				<select id="dropdown">
+					<option>Aku gak punya kelas</option>
+					<option>Kelas 10</option>
+					<option>Kelas 11</option>
+					<option>Kelas 12</option>
+				</select>
+			</label>
+
+			<label for="member" id="member-label"
+				>Kamu itu cowo atau cewe sih? <br />
+				<input type="radio" name="member" value="Rahasia" checked />Rahasia <br />
+				<input type="radio" name="member" value="Cowo"/>Cowo <br />
+				<input type="radio" name="member" value="Cewe"/>Cewe
+			</label>
+
+			<br /><br />
+            <label for="talent" id="talent-label">Bakat kamu apa aja <br>
+                <input type="checkbox" value="nyanyi" /> Nyanyi <br>
+                <input type="checkbox" value="menari" /> menari <br>
+                <input type="checkbox" value="sulap" /> sulap <br>
+                <input type="checkbox" value="editing" /> editing <br>
+                <input type="checkbox" value="Matematika" /> Matematika <br>
+                <input type="checkbox" value="stand up comedy" /> stand up comedy <br>
+                <input type="checkbox" value="komputer magic" /> komputer magic
+            </label>
+
+            <br><br>
+            <label for="comments" id="comments-label">
+                jika ada saran untuk event kali ini silahkan tulis disini
+                <textarea id="comments" cols="30" rows="10" placeholder="Tambahin alok biar ganteng. . . . . "></textarea>
+			</label>
+
+            <button type="submit" id="submit">KIRIM</button>
+		</form>
+	</body>
+</html>
+ 
